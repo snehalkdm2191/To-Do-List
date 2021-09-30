@@ -2,7 +2,6 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { RecoilRoot } from "recoil";
 // Project files
 import App from "../App";
-import ShoppingList from "./ShoppingList";
 
 test("The local storage has an empty list", () => {
     // Arrange

@@ -1,7 +1,7 @@
 // Project files
 import Checkbox from "./Checkbox";
 
-export default function ShoppingItem({ item, editList }) {
+export default function TaskItem({ item, editList }) {
   // Constants
   const { task, date, acquired } = item;
 
