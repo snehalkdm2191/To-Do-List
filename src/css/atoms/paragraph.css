@@ -1,0 +1,10 @@
+p {
+  font-size: var(--font-text-mobile);
+  color: var(--color-gray-4);
+}
+
+@media (min-width: 550px) {
+  p {
+    font-size: var(--font-text-desktop);
+  }
+}
