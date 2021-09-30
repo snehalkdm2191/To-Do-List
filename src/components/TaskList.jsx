@@ -1,10 +1,10 @@
 // Project files
-import ShoppingItem from "./ShoppingItem";
+import TaskItem from "./TaskItem";
 
-export default function ShoppingList({ list, editList }) {
+export default function TaskList({ list, editList }) {
   // Components
   const List = list.map((item) => (
-    <ShoppingItem key={item.id} item={item} editList={editList} />
+    <TaskItem key={item.id} item={item} editList={editList} />
   ));
 
   return (

@@ -5,7 +5,7 @@ import { useRecoilState } from "recoil";
 // Project files
 import ButtonCreateItem from "../components/ButtonCreateItem";
 import ButtonToggle from "../components/ButtonToggle";
-import ShoppingList from "../components/ShoppingList";
+import TaskList from "../components/TaskList";
 import Sorter from "../components/Sorter";
 import { listState } from "../state/listState";
 
@@ -37,7 +37,7 @@ export default function NormalScreen({setModal}) {
       <Sorter />
 
       {/* Pending list */}
-      <ShoppingList list={pendingList} editList={editList} />
+      <TaskList list={pendingList} editList={editList} />
 
       {/* Main controls */}
       <ButtonCreateItem setModal={setModal}/>
@@ -47,7 +47,7 @@ export default function NormalScreen({setModal}) {
       />
 
       {/* Acquired list */}
-      {showAcquired && <ShoppingList list={acquiredList} editList={editList} />}
+      {showAcquired && <TaskList list={acquiredList} editList={editList} />}
     </div>
   );
 }

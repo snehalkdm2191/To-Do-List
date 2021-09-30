@@ -15,6 +15,7 @@ export default function AskDetailsModal() {
       const listLength = list.length + 1;
       const newTask = requestNewTask(listLength, task, date);
       if (newTask !== null) setList([...list, newTask]);
+      window.location.reload();
     }
   }
 
