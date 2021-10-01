@@ -10,7 +10,7 @@ test("Should fire an event when press", () => {
   render(<ButtonToggle onClick={fakeMethod} />);
 
   // Act
-  const buttonElement = screen.getByText(/acquired items/i);
+  const buttonElement = screen.getByText(/completed task/i);
 
   fireEvent.click(buttonElement);
 
@@ -18,25 +18,25 @@ test("Should fire an event when press", () => {
   expect(fakeMethod).toHaveBeenCalledTimes(1);
 });
 
-test("Should say View acquired items when status is false.", () => {
+test("Should say View completed task when status is false.", () => {
   // Arrange
   const fakeStatus = false;
   render(<ButtonToggle status={fakeStatus} />);
 
   // Act
-  const textElement = screen.getByText(/view acquired items/i);
+  const textElement = screen.getByText(/view completed task/i);
 
   // Assert
   expect(textElement).toBeInTheDocument();
 });
 
-test("Should say Hide acquired items when status is true", () => {
+test("Should say Hide completed task when status is true", () => {
   // Arrange
   const fakeStatus = true;
   render(<ButtonToggle status={fakeStatus} />);
 
   // Act
-  const textElement = screen.getByText(/hide acquired items/i);
+  const textElement = screen.getByText(/hide completed task/i);
 
   // Assert
   expect(textElement).toBeInTheDocument();

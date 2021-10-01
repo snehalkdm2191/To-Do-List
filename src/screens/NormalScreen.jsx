@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRecoilState } from "recoil";
 
 // Project files
-import ButtonCreateItem from "../components/ButtonCreateItem";
+import ButtonCreateTask from "../components/ButtonCreateTask";
 import ButtonToggle from "../components/ButtonToggle";
 import TaskList from "../components/TaskList";
 import Sorter from "../components/Sorter";
@@ -40,7 +40,7 @@ export default function NormalScreen({setModal}) {
       <TaskList list={pendingList} editList={editList} />
 
       {/* Main controls */}
-      <ButtonCreateItem setModal={setModal}/>
+      <ButtonCreateTask setModal={setModal}/>
       <ButtonToggle
         status={showAcquired}
         onClick={() => setShowAcquired(!showAcquired)}

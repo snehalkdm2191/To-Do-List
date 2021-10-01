@@ -1,7 +1,7 @@
 // NPM Packages
-import AskDetailsModal from "../components/AskDetailsModal";
+import AskDetailsModal from "./AskDetailsModal";
 
-export default function ButtonCreateItem({setModal}) {
+export default function ButtonCreateTask({setModal}) {
 
   // Methods
   function createItem() {
