@@ -9,7 +9,7 @@ export default function ButtonToggle({ status, onClick }) {
   return (
     <button className="button-secondary" onClick={onClick}>
       <img src={Image} alt="An eye that changes between open an close" />
-      <span>{status ? "Hide" : "View"} acquired items</span>
+      <span>{status ? "Hide" : "View"} completed task</span>
     </button>
   );
 }

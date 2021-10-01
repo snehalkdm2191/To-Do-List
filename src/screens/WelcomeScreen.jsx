@@ -1,6 +1,6 @@
 // Project files
 import Image from "../assets/images/welcome-bg.png";
-import ButtonCreateItem from "../components/ButtonCreateItem";
+import ButtonCreateTask from "../components/ButtonCreateTask";
 
 export default function WelcomeScreen({setModal}) {
   return (
@@ -15,7 +15,7 @@ export default function WelcomeScreen({setModal}) {
       </p>
 
       {/* Primary controls */}
-      <ButtonCreateItem setModal={setModal}/>
+      <ButtonCreateTask setModal={setModal}/>
     </div>
   );
 }
